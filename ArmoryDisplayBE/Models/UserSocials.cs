@@ -4,5 +4,6 @@ namespace ArmoryDisplayBE.Models
     {
         public int UserId { get; set; }
         public int SocialsId { get; set; }
+        public string Url { get; set; } = "";
     }
 }
