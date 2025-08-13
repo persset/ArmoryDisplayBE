@@ -1,0 +1,6 @@
+@ArmoryDisplayBE_HostAddress = http://localhost:5167
+
+GET {{ArmoryDisplayBE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
