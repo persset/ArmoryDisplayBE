@@ -12,7 +12,7 @@ namespace ArmoryDisplayBE.Services.Hero
             this.dataContext = dataContext;
         }
 
-        public async Task<Models.Hero> CreteHero(Models.Hero hero)
+        public async Task<Models.Hero> CreateHero(Models.Hero hero)
         {
             dataContext.Heroes.Add(hero);
             await dataContext.SaveChangesAsync();

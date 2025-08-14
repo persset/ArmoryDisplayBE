@@ -12,7 +12,7 @@ namespace ArmoryDisplayBE.Services.Element
             this.dataContext = dataContext;
         }
 
-        public async Task<Models.Element> CreteElement(Models.Element element)
+        public async Task<Models.Element> CreateElement(Models.Element element)
         {
             dataContext.Elements.Add(element);
             await dataContext.SaveChangesAsync();

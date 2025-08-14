@@ -12,7 +12,7 @@ namespace ArmoryDisplayBE.Services.Constellation
             this.dataContext = dataContext;
         }
 
-        public async Task<Models.Constellation> CreteConstellation(
+        public async Task<Models.Constellation> CreateConstellation(
             Models.Constellation constellation
         )
         {
