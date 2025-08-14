@@ -9,6 +9,7 @@ namespace ArmoryDisplayBE.Models
         public int RarityId { get; set; }
         public int Attack { get; set; }
         public int Defense { get; set; }
+        public int Health { get; set; }
         public int Speed { get; set; }
         public double CriticalHitChance { get; set; }
         public int CriticalHitDamage { get; set; }
