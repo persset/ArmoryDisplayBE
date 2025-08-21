@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArmoryDisplayBE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc9fd017a33ca3510c13728565038364e14e6f3e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2d255b51639721fd9d2637c41e9ee0d8065ff96")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArmoryDisplayBE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArmoryDisplayBE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -61,7 +61,7 @@ namespace ArmoryDisplayBE.Services.HeroBaseStats
                 return null;
 
             heroBaseStats.Attack = request.Attack;
-            heroBaseStats.ClassId = request.ClassId;
+            heroBaseStats.HeroClassId = request.HeroClassId;
             heroBaseStats.ConstellationId = request.ConstellationId;
             heroBaseStats.CriticalHitChance = request.CriticalHitChance;
             heroBaseStats.CriticalHitDamage = request.CriticalHitDamage;
@@ -70,7 +70,7 @@ namespace ArmoryDisplayBE.Services.HeroBaseStats
             heroBaseStats.Effectiveness = request.Effectiveness;
             heroBaseStats.EffectResistance = request.EffectResistance;
             heroBaseStats.Health = request.Health;
-            heroBaseStats.RarityId = request.RarityId;
+            heroBaseStats.HeroRarityId = request.HeroRarityId;
             heroBaseStats.Speed = request.Speed;
 
             await dataContext.SaveChangesAsync();
