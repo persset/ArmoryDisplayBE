@@ -1,9 +1,8 @@
-using System.Numerics;
-
 namespace ArmoryDisplayBE.Models
 {
     public class HeroBaseStats
     {
+        public int Id { get; set; }
         public int ConstellationId { get; set; }
         public int HeroClassId { get; set; }
         public int HeroRarityId { get; set; }
