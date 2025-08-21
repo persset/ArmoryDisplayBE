@@ -4,6 +4,7 @@ namespace ArmoryDisplayBE.Models
 {
     public class SpecialtyChangeBonusStats
     {
+        public int Id { get; set; }
         public int HeroId { get; set; }
         public int Attack { get; set; }
         public int Defense { get; set; }
