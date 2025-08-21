@@ -15,6 +15,12 @@ namespace ArmoryDisplayBE.Data
                 .HasMany(e => e.Heroes)
                 .WithMany(e => e.Users)
                 .UsingEntity<UserHero>();
+
+            modelBuilder
+                .Entity<User>()
+                .HasMany(e => e.Socials)
+                .WithMany(e => e.Users)
+                .UsingEntity<UserSocials>();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
