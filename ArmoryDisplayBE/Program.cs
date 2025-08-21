@@ -33,6 +33,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+app.UseCors("ArthenaArmoryDisplay");
 app.UseHttpsRedirection();
 
 app.Run();
