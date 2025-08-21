@@ -12,6 +12,15 @@ builder.Services.AddScoped<IConstellationService, ConstellationService>();
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<DataContext>();
+builder.Services.AddCors(options =>
+    options.AddPolicy(
+        name: "ArthenaArmoryDisplay",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:5167").AllowAnyMethod().AllowAnyHeader();
+        }
+    )
+);
 
 var app = builder.Build();
 
