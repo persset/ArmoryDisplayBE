@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fHTBT+JTo10=",
+  "dgSpecHash": "Hl0iNpF9Ngs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\ArmoryDisplayBE.csproj",
+  "projectFilePath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\ArmoryDisplayBE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
@@ -50,6 +50,7 @@
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\scalar.aspnetcore\\2.6.9\\scalar.aspnetcore.2.6.9.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",

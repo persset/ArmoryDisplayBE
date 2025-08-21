@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\ArmoryDisplayBE.csproj": {}
+    "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\ArmoryDisplayBE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\ArmoryDisplayBE.csproj": {
+    "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\ArmoryDisplayBE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\ArmoryDisplayBE.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\ArmoryDisplayBE.csproj",
         "projectName": "ArmoryDisplayBE",
-        "projectPath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\ArmoryDisplayBE.csproj",
+        "projectPath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\ArmoryDisplayBE.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\obj\\",
+        "outputPath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -65,6 +65,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Scalar.AspNetCore": {
+              "target": "Package",
+              "version": "[2.6.9, )"
             }
           },
           "imports": [
