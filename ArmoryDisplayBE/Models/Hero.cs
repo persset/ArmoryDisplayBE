@@ -12,5 +12,6 @@ namespace ArmoryDisplayBE.Models
         public Element Element { get; set; } = null!;
         public HeroClass HeroClass { get; set; } = null!;
         public HeroRarity HeroRarity { get; set; } = null!;
+        public List<User> Users { get; } = [];
     }
 }

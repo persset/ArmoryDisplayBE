@@ -10,7 +10,11 @@ namespace ArmoryDisplayBE.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder
+                .Entity<User>()
+                .HasMany(e => e.Heroes)
+                .WithMany(e => e.Users)
+                .UsingEntity<UserHero>();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

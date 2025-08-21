@@ -8,5 +8,6 @@ namespace ArmoryDisplayBE.Models
         public string Email { get; set; } = "";
         public int ServerId { get; set; }
         public List<Socials> Socials { get; } = [];
+        public List<Hero> Heroes { get; } = [];
     }
 }
