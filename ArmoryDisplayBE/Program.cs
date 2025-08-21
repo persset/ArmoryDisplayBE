@@ -37,5 +37,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("ArthenaArmoryDisplay");
 app.UseHttpsRedirection();
+app.UseAuthorization();
+app.MapControllers();
 
 app.Run();
