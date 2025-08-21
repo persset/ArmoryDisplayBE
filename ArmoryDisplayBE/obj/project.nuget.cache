@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vLVigzTVWFI=",
+  "dgSpecHash": "fHTBT+JTo10=",
   "success": true,
-  "projectFilePath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\ArmoryDisplayBE.csproj",
+  "projectFilePath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\ArmoryDisplayBE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victo\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\victo\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

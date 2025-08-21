@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\ArmoryDisplayBE.csproj": {}
+    "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\ArmoryDisplayBE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\ArmoryDisplayBE.csproj": {
+    "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\ArmoryDisplayBE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\ArmoryDisplayBE.csproj",
+        "projectUniqueName": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\ArmoryDisplayBE.csproj",
         "projectName": "ArmoryDisplayBE",
-        "projectPath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\ArmoryDisplayBE.csproj",
+        "projectPath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\ArmoryDisplayBE.csproj",
         "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\ArmoryDisplayBE\\obj\\",
+        "outputPath": "C:\\Users\\victo\\Desktop\\Folder\\Code\\Projects\\ArthenaArmoryDisplay\\ArmoryDisplayBE\\armorydisplaybe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
