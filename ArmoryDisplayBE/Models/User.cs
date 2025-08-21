@@ -9,5 +9,6 @@ namespace ArmoryDisplayBE.Models
         public int ServerId { get; set; }
         public List<Socials> Socials { get; } = [];
         public List<Hero> Heroes { get; } = [];
+        public Server Server { get; set; } = null!;
     }
 }
