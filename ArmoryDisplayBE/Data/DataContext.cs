@@ -23,14 +23,6 @@ namespace ArmoryDisplayBE.Data
                 .UsingEntity<UserSocials>();
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer(
-                "Server=.\\SqlExpress;Database=armorydisplay;TrustedConnection=true;TrustServerCertificate=true;"
-            );
-        }
-
         public DbSet<Constellation> Constellations => Set<Constellation>();
         public DbSet<Element> Elements => Set<Element>();
         public DbSet<Hero> Heroes => Set<Hero>();
