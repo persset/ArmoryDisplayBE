@@ -33,7 +33,7 @@ namespace ArmoryDisplayBE.Services.Hero
             return hero;
         }
 
-        public async Task<List<Models.Hero>> GetAllHeros()
+        public async Task<List<Models.Hero>> GetAllHeroes()
         {
             return await dataContext.Heroes.ToListAsync();
         }
