@@ -34,7 +34,7 @@ namespace ArmoryDisplayBE.Services.UserHero
             return userHero;
         }
 
-        public async Task<List<Models.UserHero>> GetAllUserHeros()
+        public async Task<List<Models.UserHero>> GetAllUserHeroes()
         {
             return await dataContext.UserHeroes.ToListAsync();
         }
