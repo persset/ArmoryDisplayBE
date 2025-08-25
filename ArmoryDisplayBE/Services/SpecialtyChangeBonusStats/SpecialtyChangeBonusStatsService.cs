@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ArmoryDisplayBE.Services.SpecialtyChangeBonusStats
 {
-    public class SpecialtyChangeBonusStats : ISpecialtyChangeBonusStatsService
+    public class SpecialtyChangeBonusStatsService : ISpecialtyChangeBonusStatsService
     {
         private readonly DataContext dataContext;
 
-        public SpecialtyChangeBonusStats(DataContext dataContext)
+        public SpecialtyChangeBonusStatsService(DataContext dataContext)
         {
             this.dataContext = dataContext;
         }
@@ -37,7 +37,7 @@ namespace ArmoryDisplayBE.Services.SpecialtyChangeBonusStats
             return specialtyChangeBonus;
         }
 
-        public async Task<List<Models.SpecialtyChangeBonusStats>> GetAllSpecialtyChangeBonusStatss()
+        public async Task<List<Models.SpecialtyChangeBonusStats>> GetAllSpecialtyChangeBonusStats()
         {
             return await dataContext.SpecialtyChangeBonusStats.ToListAsync();
         }
