@@ -10,5 +10,6 @@ namespace ArmoryDisplayBE.Models
         public UserHero UserHero { get; set; } = null!;
         public GearType GearType { get; set; } = null!;
         public GearSets GearSet { get; set; } = null!;
+        public List<UserHeroGearStats> UserHeroGearStats { get; set; } = [];
     }
 }
