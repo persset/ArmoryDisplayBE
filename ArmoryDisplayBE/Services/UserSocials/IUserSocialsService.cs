@@ -2,7 +2,7 @@ namespace ArmoryDisplayBE.Services.UserSocials
 {
     public interface IUserSocialsService
     {
-        Task<List<Models.UserSocials>> GetAllUserSocialss();
+        Task<List<Models.UserSocials>> GetAllUserSocials();
         Task<Models.UserSocials?> GetSingleUserSocials(int id);
         Task<Models.UserSocials> CreateUserSocials(Models.UserSocials userSocials);
         Task<Models.UserSocials?> UpdateUserSocials(int id, Models.UserSocials request);
