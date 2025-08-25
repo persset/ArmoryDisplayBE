@@ -3,6 +3,7 @@ using ArmoryDisplayBE.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ArmoryDisplayBE.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20250825210516_FixGearRelatedRelationships")]
+    partial class FixGearRelatedRelationships
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -81,146 +84,6 @@ namespace ArmoryDisplayBE.Migrations
                     b.HasIndex("BonusStatsId");
 
                     b.ToTable("GearSets");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            BonusStatsId = 4,
-                            BonusStatsValue = 25,
-                            IsTwoPiece = false,
-                            Name = "Speed Set"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            BonusStatsId = 5,
-                            BonusStatsValue = 12,
-                            IsTwoPiece = true,
-                            Name = "Critical Set"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            BonusStatsId = 7,
-                            BonusStatsValue = 20,
-                            IsTwoPiece = true,
-                            Name = "Hit Set"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            BonusStatsId = 1,
-                            BonusStatsValue = 20,
-                            IsTwoPiece = true,
-                            Name = "Health Set"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            BonusStatsId = 2,
-                            BonusStatsValue = 45,
-                            IsTwoPiece = false,
-                            Name = "Attack Set"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            BonusStatsId = 3,
-                            BonusStatsValue = 20,
-                            IsTwoPiece = true,
-                            Name = "Defense Set"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            IsTwoPiece = false,
-                            Name = "Protection Set"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            BonusStatsId = 8,
-                            BonusStatsValue = 20,
-                            IsTwoPiece = true,
-                            Name = "Resist Set"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            BonusStatsId = 6,
-                            BonusStatsValue = 60,
-                            IsTwoPiece = false,
-                            Name = "Destruction Set"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            IsTwoPiece = false,
-                            Name = "Lifesteal Set"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            IsTwoPiece = false,
-                            Name = "Counter Set"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            IsTwoPiece = true,
-                            Name = "Unity Set"
-                        },
-                        new
-                        {
-                            Id = 13,
-                            IsTwoPiece = true,
-                            Name = "Immunity Set"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            IsTwoPiece = false,
-                            Name = "Rage Set"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            BonusStatsId = 4,
-                            BonusStatsValue = 12,
-                            IsTwoPiece = false,
-                            Name = "Revenge Set"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            IsTwoPiece = true,
-                            Name = "Penetration Set"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            IsTwoPiece = true,
-                            Name = "Torrent Set"
-                        },
-                        new
-                        {
-                            Id = 18,
-                            IsTwoPiece = false,
-                            Name = "Injury Set"
-                        },
-                        new
-                        {
-                            Id = 19,
-                            IsTwoPiece = false,
-                            Name = "Reversal Set"
-                        },
-                        new
-                        {
-                            Id = 20,
-                            IsTwoPiece = false,
-                            Name = "Riposte Set"
-                        });
                 });
 
             modelBuilder.Entity("ArmoryDisplayBE.Models.GearStats", b =>
@@ -238,48 +101,6 @@ namespace ArmoryDisplayBE.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("GearStats");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Health"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Attack"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Defense"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Speed"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Name = "Critical Rate"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Name = "Critical Damage"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Name = "Effectiveness"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Name = "Effect Resistance"
-                        });
                 });
 
             modelBuilder.Entity("ArmoryDisplayBE.Models.GearType", b =>
@@ -297,38 +118,6 @@ namespace ArmoryDisplayBE.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("GearTypes");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Helmet"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Armor"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Boots"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Weapon"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Name = "Necklace"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Name = "Ring"
-                        });
                 });
 
             modelBuilder.Entity("ArmoryDisplayBE.Models.Hero", b =>
