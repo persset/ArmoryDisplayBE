@@ -36,5 +36,10 @@ namespace ArmoryDisplayBE.Data
         public DbSet<User> Users => Set<User>();
         public DbSet<UserHero> UserHeroes => Set<UserHero>();
         public DbSet<UserSocials> UserSocials => Set<UserSocials>();
+        public DbSet<GearSets> GearSets => Set<GearSets>();
+        public DbSet<GearStats> GearStats => Set<GearStats>();
+        public DbSet<GearType> GearTypes => Set<GearType>();
+        public DbSet<UserHeroGear> UserHeroGears => Set<UserHeroGear>();
+        public DbSet<UserHeroGearStats> UserHeroGearStats => Set<UserHeroGearStats>();
     }
 }
