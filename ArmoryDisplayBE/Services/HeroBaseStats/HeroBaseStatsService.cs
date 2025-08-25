@@ -35,7 +35,7 @@ namespace ArmoryDisplayBE.Services.HeroBaseStats
             return heroBaseStats;
         }
 
-        public async Task<List<Models.HeroBaseStats>> GetAllHeroBaseStatss()
+        public async Task<List<Models.HeroBaseStats>> GetAllHeroBaseStats()
         {
             return await dataContext.HeroBaseStats.ToListAsync();
         }
