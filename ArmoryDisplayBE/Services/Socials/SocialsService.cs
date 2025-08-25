@@ -35,7 +35,7 @@ namespace ArmoryDisplayBE.Services.Socials
             return socials;
         }
 
-        public async Task<List<Models.Socials>> GetAllSocialss()
+        public async Task<List<Models.Socials>> GetAllSocials()
         {
             return await dataContext.Socials.ToListAsync();
         }
