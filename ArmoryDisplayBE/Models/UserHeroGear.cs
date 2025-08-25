@@ -7,5 +7,8 @@ namespace ArmoryDisplayBE.Models
         public int GearTypeId { get; set; }
         public int GearSetId { get; set; }
         public int Level { get; set; }
+        public UserHero UserHero { get; set; } = null!;
+        public GearType GearType { get; set; } = null!;
+        public GearSets GearSet { get; set; } = null!;
     }
 }
