@@ -6,5 +6,6 @@ namespace ArmoryDisplayBE.Models
         public string Name { get; set; } = "";
         public int MainStatId { get; set; }
         public int MainStatValue { get; set; }
+        public GearStats MainStat { get; set; } = null!;
     }
 }
