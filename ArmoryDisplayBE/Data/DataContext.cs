@@ -42,7 +42,8 @@ namespace ArmoryDisplayBE.Data
                     new Stats { Id = 5, Name = "Critical Rate" },
                     new Stats { Id = 6, Name = "Critical Damage" },
                     new Stats { Id = 7, Name = "Effectiveness" },
-                    new Stats { Id = 8, Name = "Effect Resistance" }
+                    new Stats { Id = 8, Name = "Effect Resistance" },
+                    new Stats { Id = 9, Name = "Dual Attack Chance" }
                 );
 
             modelBuilder

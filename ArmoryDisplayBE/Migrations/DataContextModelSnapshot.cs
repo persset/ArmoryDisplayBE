@@ -223,65 +223,6 @@ namespace ArmoryDisplayBE.Migrations
                         });
                 });
 
-            modelBuilder.Entity("ArmoryDisplayBE.Models.GearStats", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("GearStats");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Health"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Attack"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Defense"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Speed"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Name = "Critical Rate"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Name = "Critical Damage"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Name = "Effectiveness"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Name = "Effect Resistance"
-                        });
-                });
-
             modelBuilder.Entity("ArmoryDisplayBE.Models.GearType", b =>
                 {
                     b.Property<int>("Id")
@@ -540,6 +481,70 @@ namespace ArmoryDisplayBE.Migrations
                     b.ToTable("SpecialtyChangeBonusStats");
                 });
 
+            modelBuilder.Entity("ArmoryDisplayBE.Models.Stats", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Stats");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Health"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Attack"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Defense"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Speed"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Critical Rate"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Critical Damage"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Effectiveness"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Effect Resistance"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Name = "Dual Attack Chance"
+                        });
+                });
+
             modelBuilder.Entity("ArmoryDisplayBE.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -700,7 +705,7 @@ namespace ArmoryDisplayBE.Migrations
 
             modelBuilder.Entity("ArmoryDisplayBE.Models.GearSets", b =>
                 {
-                    b.HasOne("ArmoryDisplayBE.Models.GearStats", "BonusStats")
+                    b.HasOne("ArmoryDisplayBE.Models.Stats", "BonusStats")
                         .WithMany()
                         .HasForeignKey("BonusStatsId");
 
@@ -839,7 +844,7 @@ namespace ArmoryDisplayBE.Migrations
 
             modelBuilder.Entity("ArmoryDisplayBE.Models.UserHeroGearStats", b =>
                 {
-                    b.HasOne("ArmoryDisplayBE.Models.GearStats", "GearStats")
+                    b.HasOne("ArmoryDisplayBE.Models.Stats", "GearStats")
                         .WithMany()
                         .HasForeignKey("GearStatsId")
                         .OnDelete(DeleteBehavior.Cascade)
