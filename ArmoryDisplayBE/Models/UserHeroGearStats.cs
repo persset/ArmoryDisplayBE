@@ -10,6 +10,6 @@ namespace ArmoryDisplayBE.Models
         public bool IsPercent { get; set; }
 
         public UserHeroGear UserHeroGear { get; set; } = null!;
-        public GearStats GearStats { get; set; } = null!;
+        public Stats GearStats { get; set; } = null!;
     }
 }

@@ -33,16 +33,16 @@ namespace ArmoryDisplayBE.Data
         public void SeedData(ModelBuilder modelBuilder)
         {
             modelBuilder
-                .Entity<GearStats>()
+                .Entity<Stats>()
                 .HasData(
-                    new GearStats { Id = 1, Name = "Health" },
-                    new GearStats { Id = 2, Name = "Attack" },
-                    new GearStats { Id = 3, Name = "Defense" },
-                    new GearStats { Id = 4, Name = "Speed" },
-                    new GearStats { Id = 5, Name = "Critical Rate" },
-                    new GearStats { Id = 6, Name = "Critical Damage" },
-                    new GearStats { Id = 7, Name = "Effectiveness" },
-                    new GearStats { Id = 8, Name = "Effect Resistance" }
+                    new Stats { Id = 1, Name = "Health" },
+                    new Stats { Id = 2, Name = "Attack" },
+                    new Stats { Id = 3, Name = "Defense" },
+                    new Stats { Id = 4, Name = "Speed" },
+                    new Stats { Id = 5, Name = "Critical Rate" },
+                    new Stats { Id = 6, Name = "Critical Damage" },
+                    new Stats { Id = 7, Name = "Effectiveness" },
+                    new Stats { Id = 8, Name = "Effect Resistance" }
                 );
 
             modelBuilder
@@ -236,7 +236,7 @@ namespace ArmoryDisplayBE.Data
         public DbSet<UserHero> UserHeroes => Set<UserHero>();
         public DbSet<UserSocials> UserSocials => Set<UserSocials>();
         public DbSet<GearSets> GearSets => Set<GearSets>();
-        public DbSet<GearStats> GearStats => Set<GearStats>();
+        public DbSet<Stats> Stats => Set<Stats>();
         public DbSet<GearType> GearTypes => Set<GearType>();
         public DbSet<UserHeroGear> UserHeroGears => Set<UserHeroGear>();
         public DbSet<UserHeroGearStats> UserHeroGearStats => Set<UserHeroGearStats>();
