@@ -14,27 +14,30 @@ namespace ArmoryDisplayBE.Migrations
         {
             migrationBuilder.DropForeignKey(
                 name: "FK_GearSets_GearStats_BonusStatsId",
-                table: "GearSets");
+                table: "GearSets"
+            );
 
             migrationBuilder.DropForeignKey(
                 name: "FK_UserHeroGearStats_GearStats_GearStatsId",
-                table: "UserHeroGearStats");
+                table: "UserHeroGearStats"
+            );
 
-            migrationBuilder.DropTable(
-                name: "GearStats");
+            migrationBuilder.DropTable(name: "GearStats");
 
             migrationBuilder.CreateTable(
                 name: "Stats",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    Id = table
+                        .Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Stats", x => x.Id);
-                });
+                }
+            );
 
             migrationBuilder.InsertData(
                 table: "Stats",
@@ -49,15 +52,17 @@ namespace ArmoryDisplayBE.Migrations
                     { 6, "Critical Damage" },
                     { 7, "Effectiveness" },
                     { 8, "Effect Resistance" },
-                    { 9, "Dual Attack Chance" }
-                });
+                    { 9, "Dual Attack Chance" },
+                }
+            );
 
             migrationBuilder.AddForeignKey(
                 name: "FK_GearSets_Stats_BonusStatsId",
                 table: "GearSets",
                 column: "BonusStatsId",
                 principalTable: "Stats",
-                principalColumn: "Id");
+                principalColumn: "Id"
+            );
 
             migrationBuilder.AddForeignKey(
                 name: "FK_UserHeroGearStats_Stats_GearStatsId",
@@ -65,7 +70,8 @@ namespace ArmoryDisplayBE.Migrations
                 column: "GearStatsId",
                 principalTable: "Stats",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.Cascade
+            );
         }
 
         /// <inheritdoc />
@@ -73,27 +79,30 @@ namespace ArmoryDisplayBE.Migrations
         {
             migrationBuilder.DropForeignKey(
                 name: "FK_GearSets_Stats_BonusStatsId",
-                table: "GearSets");
+                table: "GearSets"
+            );
 
             migrationBuilder.DropForeignKey(
                 name: "FK_UserHeroGearStats_Stats_GearStatsId",
-                table: "UserHeroGearStats");
+                table: "UserHeroGearStats"
+            );
 
-            migrationBuilder.DropTable(
-                name: "Stats");
+            migrationBuilder.DropTable(name: "Stats");
 
             migrationBuilder.CreateTable(
                 name: "GearStats",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    Id = table
+                        .Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_GearStats", x => x.Id);
-                });
+                }
+            );
 
             migrationBuilder.InsertData(
                 table: "GearStats",
@@ -107,15 +116,17 @@ namespace ArmoryDisplayBE.Migrations
                     { 5, "Critical Rate" },
                     { 6, "Critical Damage" },
                     { 7, "Effectiveness" },
-                    { 8, "Effect Resistance" }
-                });
+                    { 8, "Effect Resistance" },
+                }
+            );
 
             migrationBuilder.AddForeignKey(
                 name: "FK_GearSets_GearStats_BonusStatsId",
                 table: "GearSets",
                 column: "BonusStatsId",
                 principalTable: "GearStats",
-                principalColumn: "Id");
+                principalColumn: "Id"
+            );
 
             migrationBuilder.AddForeignKey(
                 name: "FK_UserHeroGearStats_GearStats_GearStatsId",
@@ -123,7 +134,8 @@ namespace ArmoryDisplayBE.Migrations
                 column: "GearStatsId",
                 principalTable: "GearStats",
                 principalColumn: "Id",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.Cascade
+            );
         }
     }
 }
