@@ -7,6 +7,6 @@ namespace ArmoryDisplayBE.Models
         public int? BonusStatsId { get; set; }
         public int? BonusStatsValue { get; set; }
         public bool IsTwoPiece { get; set; }
-        public Stats? BonusStats { get; set; }
+        public Stat? BonusStats { get; set; }
     }
 }

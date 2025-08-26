@@ -1,6 +1,6 @@
 namespace ArmoryDisplayBE.Models
 {
-    public class Stats
+    public class Stat
     {
         public int Id { get; set; }
         public string Name { get; set; } = "";
