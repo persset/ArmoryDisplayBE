@@ -1,6 +1,6 @@
 namespace ArmoryDisplayBE.Models
 {
-    public class GearSets
+    public class GearSet
     {
         public int Id { get; set; }
         public string Name { get; set; } = "";

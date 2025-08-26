@@ -58,9 +58,9 @@ namespace ArmoryDisplayBE.Data
                 );
 
             modelBuilder
-                .Entity<GearSets>()
+                .Entity<GearSet>()
                 .HasData(
-                    new GearSets
+                    new GearSet
                     {
                         Id = 1,
                         Name = "Speed Set",
@@ -68,7 +68,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = 25,
                         IsTwoPiece = false,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 2,
                         Name = "Critical Set",
@@ -76,7 +76,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = 12,
                         IsTwoPiece = true,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 3,
                         Name = "Hit Set",
@@ -84,7 +84,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = 20,
                         IsTwoPiece = true,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 4,
                         Name = "Health Set",
@@ -92,7 +92,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = 20,
                         IsTwoPiece = true,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 5,
                         Name = "Attack Set",
@@ -100,7 +100,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = 45,
                         IsTwoPiece = false,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 6,
                         Name = "Defense Set",
@@ -108,7 +108,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = 20,
                         IsTwoPiece = true,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 7,
                         Name = "Protection Set",
@@ -116,7 +116,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = null,
                         IsTwoPiece = false,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 8,
                         Name = "Resist Set",
@@ -124,7 +124,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = 20,
                         IsTwoPiece = true,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 9,
                         Name = "Destruction Set",
@@ -132,7 +132,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = 60,
                         IsTwoPiece = false,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 10,
                         Name = "Lifesteal Set",
@@ -140,7 +140,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = null,
                         IsTwoPiece = false,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 11,
                         Name = "Counter Set",
@@ -148,7 +148,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = null,
                         IsTwoPiece = false,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 12,
                         Name = "Unity Set",
@@ -156,7 +156,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = null,
                         IsTwoPiece = true,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 13,
                         Name = "Immunity Set",
@@ -164,7 +164,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = null,
                         IsTwoPiece = true,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 14,
                         Name = "Rage Set",
@@ -172,7 +172,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = null,
                         IsTwoPiece = false,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 15,
                         Name = "Revenge Set",
@@ -180,7 +180,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = 12,
                         IsTwoPiece = false,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 16,
                         Name = "Penetration Set",
@@ -188,7 +188,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = null,
                         IsTwoPiece = true,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 17,
                         Name = "Torrent Set",
@@ -196,7 +196,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = null,
                         IsTwoPiece = true,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 18,
                         Name = "Injury Set",
@@ -204,7 +204,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = null,
                         IsTwoPiece = false,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 19,
                         Name = "Reversal Set",
@@ -212,7 +212,7 @@ namespace ArmoryDisplayBE.Data
                         BonusStatsValue = null,
                         IsTwoPiece = false,
                     },
-                    new GearSets
+                    new GearSet
                     {
                         Id = 20,
                         Name = "Riposte Set",
@@ -236,7 +236,7 @@ namespace ArmoryDisplayBE.Data
         public DbSet<User> Users => Set<User>();
         public DbSet<UserHero> UserHeroes => Set<UserHero>();
         public DbSet<UserSocials> UserSocials => Set<UserSocials>();
-        public DbSet<GearSets> GearSets => Set<GearSets>();
+        public DbSet<GearSet> GearSets => Set<GearSet>();
         public DbSet<Stat> Stats => Set<Stat>();
         public DbSet<GearType> GearTypes => Set<GearType>();
         public DbSet<UserHeroGear> UserHeroGears => Set<UserHeroGear>();

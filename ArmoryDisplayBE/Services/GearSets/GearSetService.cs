@@ -1,18 +1,18 @@
 using ArmoryDisplayBE.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace ArmoryDisplayBE.Services.GearSets
+namespace ArmoryDisplayBE.Services.GearSet
 {
-    public class GearSetsService : IGearSetsService
+    public class GearSetService : IGearSetService
     {
         private readonly DataContext dataContext;
 
-        public GearSetsService(DataContext dataContext)
+        public GearSetService(DataContext dataContext)
         {
             this.dataContext = dataContext;
         }
 
-        public async Task<Models.GearSets> CreateGearSets(Models.GearSets gearSet)
+        public async Task<Models.GearSet> CreateGearSet(Models.GearSet gearSet)
         {
             dataContext.GearSets.Add(gearSet);
 
@@ -21,7 +21,7 @@ namespace ArmoryDisplayBE.Services.GearSets
             return gearSet;
         }
 
-        public async Task<Models.GearSets?> DeleteGearSets(int id)
+        public async Task<Models.GearSet?> DeleteGearSet(int id)
         {
             var gearSet = await dataContext.GearSets.FindAsync(id);
 
@@ -35,12 +35,12 @@ namespace ArmoryDisplayBE.Services.GearSets
             return gearSet;
         }
 
-        public async Task<List<Models.GearSets>> GetAllGearSets()
+        public async Task<List<Models.GearSet>> GetAllGearSets()
         {
             return await dataContext.GearSets.ToListAsync();
         }
 
-        public async Task<Models.GearSets?> GetSingleGearSets(int id)
+        public async Task<Models.GearSet?> GetSingleGearSet(int id)
         {
             var gearSet = await dataContext.GearSets.FindAsync(id);
 
@@ -50,7 +50,7 @@ namespace ArmoryDisplayBE.Services.GearSets
             return gearSet;
         }
 
-        public async Task<Models.GearSets?> UpdateGearSets(int id, Models.GearSets request)
+        public async Task<Models.GearSet?> UpdateGearSet(int id, Models.GearSet request)
         {
             var gearSet = await dataContext.GearSets.FindAsync(id);
 
