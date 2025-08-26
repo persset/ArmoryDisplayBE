@@ -12,7 +12,7 @@ namespace ArmoryDisplayBE.Services.GearType
             this.dataContext = dataContext;
         }
 
-        public async Task<Models.GearType> CreateGearTypes(Models.GearType gearType)
+        public async Task<Models.GearType> CreateGearType(Models.GearType gearType)
         {
             dataContext.GearTypes.Add(gearType);
 
@@ -35,7 +35,7 @@ namespace ArmoryDisplayBE.Services.GearType
             return gearType;
         }
 
-        public async Task<List<Models.GearType>> GetAllGearType()
+        public async Task<List<Models.GearType>> GetAllGearTypes()
         {
             return await dataContext.GearTypes.ToListAsync();
         }

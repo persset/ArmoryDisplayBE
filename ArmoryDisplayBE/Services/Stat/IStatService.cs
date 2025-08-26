@@ -1,6 +1,6 @@
-namespace ArmoryDisplayBE.Services.Stats
+namespace ArmoryDisplayBE.Services.Stat
 {
-    public interface IStatsService
+    public interface IStatService
     {
         Task<List<Models.Stat>> GetAllStats();
         Task<Models.Stat?> GetSingleStat(int id);

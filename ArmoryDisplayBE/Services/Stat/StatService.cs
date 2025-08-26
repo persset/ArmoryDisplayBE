@@ -1,10 +1,10 @@
 using ArmoryDisplayBE.Data;
-using ArmoryDisplayBE.Services.Stats;
+using ArmoryDisplayBE.Services.Stat;
 using Microsoft.EntityFrameworkCore;
 
 namespace ArmoryDisplayBE.Services.Stat
 {
-    public class StatService : IStatsService
+    public class StatService : IStatService
     {
         private readonly DataContext dataContext;
 
